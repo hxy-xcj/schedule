@@ -1,0 +1,324 @@
+{
+  "user":[
+    {
+      "id":1,
+      "username":"aa",
+      "password":"123456",
+      "role":2
+    }
+  ],
+  "rights": [
+    {
+      "id": 1,
+      "title": "首页",
+      "key": "/home",
+      "pagepermisson": 1,
+      "grade": 1
+    },
+    {
+      "id": 2,
+      "title": "排班规则管理",
+      "key": "/rules-manage",
+      "pagepermisson": 1,
+      "grade": 1
+    },
+    {
+      "id": 5,
+      "title": "组织管理",
+      "key": "/organization-manage",
+      "pagepermisson": 1,
+      "grade": 1
+    },
+    {
+      "id": 11,
+      "title": "权限管理",
+      "key": "/roles-manage",
+      "pagepermisson": 1,
+      "grade": 1
+    },
+    {
+      "id": 14,
+      "title": "智能预测管理",
+      "key": "/prediction-manage",
+      "pagepermisson": 1,
+      "grade": 1
+    },
+    {
+      "id": 17,
+      "title": "个人中心",
+      "key": "/center",
+      "pagepermisson": 1,
+      "grade": 1
+    }
+  ],
+  "children": [
+    {
+      "id": 3,
+      "title": "固定规则",
+      "rightId": 2,
+      "key": "/rules-manage/regular",
+      "grade": 2
+    },
+    {
+      "id": 4,
+      "title": "用户自定义规则",
+      "rightId": 2,
+      "key": "/rules-manage/customization",
+      "grade": 2
+    },
+    {
+      "id": 6,
+      "title": "门店信息管理",
+      "rightId": 5,
+      "key": "/organization-manage/outlet",
+      "grade": 2
+    },
+    {
+      "id": 7,
+      "title": "人员管理",
+      "rightId": 5,
+      "key": "/organization-manage/personnel",
+      "pagepermisson": 1,
+      "grade": 2
+    },
+    {
+      "id": 9,
+      "title": "用户权限",
+      "rightId": 5,
+      "key": "/organization-manage/users-right",
+      "pagepermisson": 1,
+      "grade": 2
+    },
+    {
+      "id": 10,
+      "title": "审核列表",
+      "rightId": 5,
+      "key": "/organization-manage/auditlist",
+      "pagepermisson": 1,
+      "grade": 2
+    },
+    {
+      "id": 12,
+      "title": "角色权限",
+      "rightId": 11,
+      "key": "/roles-manage/character-right",
+      "grade": 2
+    },
+    {
+      "id": 13,
+      "title": "权限列表",
+      "rightId": 11,
+      "key": "/roles-manage/rolelist",
+      "grade": 2
+    },
+    {
+      "id": 15,
+      "title": "业务量预测",
+      "rightId": 14,
+      "key": "/prediction-manage/volumn-predict",
+      "grade": 2
+    },
+    {
+      "id": 16,
+      "title": "智能排班",
+      "rightId": 14,
+      "key": "/prediction-manage/schedule-predict",
+      "grade": 2
+    },
+    {
+      "id": 18,
+      "title": "门店排班表",
+      "rightId": 17,
+      "key": "/center/schedule-outlet",
+      "grade": 2
+    },
+    {
+      "id": 19,
+      "title": "个人排班表",
+      "rightId": 17,
+      "key": "/center/schedule-mine",
+      "grade": 2
+    },
+    {
+      "id": 20,
+      "title": "用户信息管理",
+      "rightId": 17,
+      "key": "/center/info",
+      "grade": 2,
+      "routepermisson": 1
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "roleName": "公司管理员",
+      "roleType": 1,
+      "right": []
+    },
+    {
+      "id": 2,
+      "roleName": "区域管理员",
+      "roleType": 2,
+      "right": []
+    },
+    {
+      "id": 3,
+      "roleName": "门店经理",
+      "roleType": 3,
+      "right": []
+    },
+    {
+      "id": 4,
+      "roleName": "副经理",
+      "roleType": 4,
+      "right": []
+    },
+    {
+      "id": 5,
+      "roleName": "小组长",
+      "roleType": 4,
+      "right": []
+    },
+    {
+      "id": 6,
+      "roleName": "收银",
+      "roleType": 4,
+      "right": []
+    },
+    {
+      "id": 7,
+      "roleName": "导购",
+      "roleType": 4,
+      "right": []
+    },
+    {
+      "id": 8,
+      "roleName": "库房",
+      "roleType": 4,
+      "right": []
+    }
+  ],
+  "regularrules": [
+    {
+      "id": 1,
+      "title": "门店营业时间设置",
+      "content": [
+        {
+          "label": "工作日",
+          "type": "time_range",
+          "begin": "09:00",
+          "end": "21:00"
+        },
+        {
+          "label": "周末",
+          "type": "time_range",
+          "begin": "10:00",
+          "end": "22:00"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "员工工作时长设置(小时)",
+      "content": [
+        {
+          "label": "每周最多工作时长",
+          "type": "num",
+          "value": 40
+        },
+        {
+          "label": "每天最多工作时长",
+          "type": "num",
+          "value": 8
+        },
+        {
+          "label": "单个班次最少时长",
+          "type": "num",
+          "value": 2
+        },
+        {
+          "label": "单个班次最多时长",
+          "type": "num",
+          "value": 4
+        },
+        {
+          "label": "最长连续工作时长",
+          "type": "num",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "休息时间设置",
+      "content": [
+        {
+          "label": "午餐时间",
+          "type": "time_range",
+          "begin": "11:00",
+          "end": "14:00"
+        },
+        {
+          "label": "晚餐时间",
+          "type": "time_range",
+          "begin": "17:00",
+          "end": "20:00"
+        },
+        {
+          "label": "休息时间(小时)",
+          "type": "num",
+          "value": "0.5"
+        }
+      ]
+    }
+  ],
+  "customizationrules": [
+    {
+      "id": 1,
+      "title": "开店准备工作",
+      "content": [
+        {
+          "label": "开店准备人数",
+          "type": "num",
+          "value": 3
+        },
+        {
+          "label": "参与开店人员安排",
+          "type": "mutichoices",
+          "value":["li","ming"]
+        },
+        {
+          "label": "每天不超过4h的班次",
+          "type": "num",
+          "value": 3
+        },
+        {
+          "label": "班次小于4h的人员安排",
+          "type": "mutichoices",
+          "value":[]
+        },
+        {
+          "label": "值班人数",
+          "type": "num",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "关店收尾工作",
+      "content": [
+        {
+          "label": "关店收尾人数",
+          "type": "num",
+          "value": 2
+        },
+        {
+          "label": "关店人员安排",
+          "type": "mutichoices",
+          "value":[]
+        }
+      ]
+    }
+  ]
+}
