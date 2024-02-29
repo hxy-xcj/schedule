@@ -1,0 +1,23 @@
+.line {
+	float: left;
+	margin:5px 5px 0px 0px;
+	background-color: #409eff;
+	width: 5px;
+	height: 15px;
+
+}
+.tab {
+	margin-left: 10px;
+}
+.rule_title {
+	float: left;
+	font-size: 16px;
+	font-weight: 700;
+}
+.bread {
+	margin:10px 0px 10px 20px;
+	font-size: 16px;
+}
+.ant-picker-input >input[disabled]{
+	color:black!important
+}

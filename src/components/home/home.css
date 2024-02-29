@@ -1,0 +1,60 @@
+.box{
+	float:left;
+	border-radius: 5px;
+	background-color: white;
+	box-shadow: 3px 2px 20px 0px #d3d3d3;
+	letter-spacing: 2px;
+}
+.notices {
+	height: 272px;
+	width: 282px;
+}
+.panel1 {
+	margin-left: 27px;
+	height: 272px;
+	width: 437px;
+}
+.notices_header {
+	margin-top:10px;
+	padding-right: 26px;
+/*	height: 52px;*/
+/*	line-height: 52px;*/
+	text-align: right;
+}
+.circle {
+	float:left;
+	margin:5px 10px 40px 0px;
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	background-color: #ff5500;
+}
+.panel3_title {
+	color:white;
+	text-align:center;
+	margin:0 auto;
+	margin-top:15px;
+	font-size:18px;
+}
+.panel_content {
+	margin-top:33px;
+	padding-left:18px;
+	padding-right:25px;
+/*	border:1px solid red;*/
+}
+.data {
+	font-size: 80px;
+}
+.panel3{
+	width: 329px;
+	height: 267px;
+	background: linear-gradient(to bottom, #ff5500,#ff8620); 
+}
+.panel4 {
+	margin-left: 27px;
+	margin-top: -7px;
+	height: 280px;
+	width: 860px;
+	padding: 10px;
+}
+
